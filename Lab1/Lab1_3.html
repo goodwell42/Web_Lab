@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Lab1_3</title>	
+	<script>
+		function toWhere(where) {
+			document.getElementById(where).scrollIntoView();
+		}
+	</script>
+	<style type="text/css">
+		#top, #bottom {
+			text-align: right;
+		}
+	</style>
+</head>
+<body>
+	<div id="top">
+		the top of the page
+		<button onclick="toWhere('bottom')">点击去到底部</button>
+	</div>
+	<h1 align="center">Exercise N°3</h1>
+
+<!-- A -->
+	<div id="a">
+		<h3>A.	Print the squares of the numbers 1 - 20. Each number should be on a separate line, next to it the number 2 superscripted, an equal sign and the result. (Example: 10² = 100)</h1>
+	<script>
+		function square(num) {
+			return num*num;
+		}
+		for (var i = 1; i <= 20; i++) {
+			var text = i + "<sup>2</sup>=" + square(i) + "<br />";
+			var print = "<center>" + text + "</center>";
+			document.write(print);
+		}
+	</script>
+	</div><br><hr><br>
+
+<!-- B -->
+	<div id="b">
+		<h3>B.	Create some links to various search engines (baidu, yahoo, altavista, google, etc)</h3>
+		<div align="center">
+			<a href="http://www.baidu.com">百度</a>
+			<a href="http://www.google.com">Google</a>
+			<a href="http://www.yahoo.com">Yahoo</a>
+		</div>
+	</div><br><hr><br>
+
+<!-- C -->
+	<div id="c">
+		<h3>C.	Create links to five different pages on five different websites that should all open in a new window.</h3>
+		<div align="center">
+			<a href="../goodwell.html" target="_blank">Goodwell</a>
+			<a href="http://www.baidu.com" target="_blank">百度</a>
+			<a href="http://www.google.com" target="_blank">Google</a>
+			<a href="http://www.yahoo.com" target="_blank">Yahoo</a>
+			<a href="https://www.bilibili.com" target="_blank">哔哩哔哩</a>
+		</div>	</div><br><hr><br>
+
+<!-- D -->
+	<div id="d">
+		<h3>D.	Create a page with a link at the top of it that when clicked will jump all the way to the bottom of the page. At the bottom of the page there should be a link to jump back to the top of the page.</h3>
+	</div><br><hr><br>
+	<div id="bottom">
+		the bottom of the page
+		<button onclick="toWhere('top')">点击回到顶部</button>
+	</div>
+
+<!--copyright-->
+	<div style="position: fixed; bottom: 0px; width: 100%; text-align: center;">
+		<footer>Copyright &copy; 2018.<a href="C:\Codes\git_repository\moban2207\index.html" target="_blank">GOODWELL</a> All rights reserved.</footer>
+	</div>
+</body>
+</html>
