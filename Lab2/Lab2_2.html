@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Lab2_2</title>
+	<style type="text/css">
+		table{ border-collapse:collapse;border-spacing: 0;}
+		table{ border:1px solid #000000;} 
+		td{ padding-right: 120px;}
+		.in { border-width:0px; border-style:hidden;}
+		.in td{ padding-right: 180px;}
+		/*解决方案不够好：出现内表格下边框达不到长度，总留有空白*/
+	</style>
+</head>
+<body>
+	<h1 align="center">Exercise N°1</h1>
+	<div align="center">
+	<table border="1" cellspacing="0" cellpadding="0" class="out">
+		<tr style="font-weight: bold;">
+			<td>Company</td>
+			<td>Model</td>
+		</tr>
+		<tr>
+			<td>Dodge</td>
+			<td>Challanger</td>
+		</tr>
+		<tr>
+			<td>Maruti</td>
+			<td>Swift</td>
+		</tr>
+		<tr>
+			<td>Jeep</td>
+			<td>Wrangler</td>
+		</tr>
+		<tr>
+			<td>Ford</td>
+			<td style="padding-right: 0px;"><table border="1" class="in">
+				<tr><td>Fusion</td></tr>
+				<tr><td>Fiesta</td></tr>
+				<tr><td>Escape</td></tr>
+			</table></td>
+		</tr>
+		<tr>
+			<td>BWM</td>
+			<td>BWM 5 Series</td>
+		</tr>
+	</table>
+	</div>
+
+<!--copyright-->
+	<div style="position: fixed; bottom: 0px; width: 100%; text-align: center;">
+		<footer>Copyright &copy; 2018.<a href="C:\Codes\git_repository\moban2207\index.html" target="_blank">GOODWELL</a> All rights reserved.</footer>
+	</div>
+</body>
+</html>

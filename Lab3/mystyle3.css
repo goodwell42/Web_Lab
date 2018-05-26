@@ -1,0 +1,11 @@
+#c caption{ 
+	background: lightgreen; 
+}
+#c table{ 
+	background-color:#D4FFFF;
+}
+.wtf{ 
+	background-color:#D4BFFF;
+}
+td{ padding-right: 30px;}
+/* css注释：设置单元格要宽一丢丢*/

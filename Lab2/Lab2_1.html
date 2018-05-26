@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Lab2_1</title>
+	<style type="text/css">
+		table{ border-collapse:collapse;}
+		/* css注释：合并内外框线，变一条*/
+		#a table{ border:1px solid #000000} 
+		/* css注释：只对table标签设置边框样式 */ 
+		#b table td{ border:1px solid #000000} 
+		/* css注释：只对table td标签设置边框样式 */
+		#c table{ border:1px solid black;} 
+		#c table td{border:1px solid black;} 
+		/* css注释：设置table背景为红色，td背景为白色 */ 
+		caption{ border-top: 1px;border-left: 1px;border-right: 1px;
+		 border-bottom:0px; border-style: solid;font-weight: bold;}
+		#c caption{ background: lightgreen; }
+		#c table{ background-color:#D4FFFF;}
+		.wtf{ background-color:#D4BFFF;}
+		td{ padding-right: 30px;}
+		/* css注释：设置单元格要宽一丢丢*/
+	</style> 
+</head>
+<body>
+	<h1 align="center">Exercise N°1</h1>
+<!-- A -->
+	<div id="a" align="center">
+	<table>	
+		<tr>
+			<td>Name</td><td>Maths</td><td>Science</td><td>English</td>
+			<td>Physics</td><td>General Knowledge</td>
+		</tr>
+		<tr>
+			<td>David</td><td>85</td><td>87</td><td>88</td><td>92</td><td>88</td>
+		</tr>
+		<tr>
+			<td>Richard</td><td>91</td><td>81</td><td>78</td><td>71</td><td>74</td>
+		</tr>
+		<tr>
+			<td>John</td><td>81</td><td>86</td><td>88</td><td>84</td><td>92</td>
+		</tr>
+		<tr>
+			<td>Tony</td><td>84</td><td>86</td><td>87</td><td>82</td><td>81</td>
+		</tr>
+		<tr>
+			<td>Scott</td><td>71</td><td>79</td><td>82</td><td>88</td><td>89</td>
+		</tr>
+	</table>
+	</div><br><hr><br>
+
+<!-- B -->
+	<div id="b" align="center">
+	<table border="0">	
+		<caption>STUDENTS MARK SHEET</caption>
+		<tr>
+			<td>Name</td><td>Maths</td><td>Science</td><td>English</td>
+			<td>Physics</td><td>General Knowledge</td>
+		</tr>
+		<tr>
+			<td>David</td><td>85</td><td>87</td><td>88</td><td>92</td><td>88</td>
+		</tr>
+		<tr>
+			<td>Richard</td><td>91</td><td>81</td><td>78</td><td>71</td><td>74</td>
+		</tr>
+		<tr>
+			<td>John</td><td>81</td><td>86</td><td>88</td><td>84</td><td>92</td>
+		</tr>
+		<tr>
+			<td>Tony</td><td>84</td><td>86</td><td>87</td><td>82</td><td>81</td>
+		</tr>
+		<tr>
+			<td>Scott</td><td>71</td><td>79</td><td>82</td><td>88</td><td>89</td>
+		</tr>
+	</table>
+	</div><br><hr><br>
+
+<!-- C -->
+	<div id="c" align="center">
+	<table>	
+		<caption><div style="color: #FFF">STUDENTS MARK SHEET</div></caption>	
+		<tr>
+			<td class="wtf">Name</td><td>Maths</td><td class="wtf">Science</td><td>English</td>
+			<td class="wtf">Physics</td><td>General Knowledge</td>
+		</tr>
+		<tr>
+			<td class="wtf">David</td><td>85</td><td class="wtf">87</td><td>88</td><td class="wtf">92</td><td>88</td>
+		</tr>
+		<tr>
+			<td class="wtf">Richard</td><td>91</td><td class="wtf">81</td><td>78</td><td class="wtf">71</td><td>74</td>
+		</tr>
+		<tr>
+			<td class="wtf">John</td><td>81</td><td class="wtf">86</td><td>88</td><td class="wtf">84</td><td>92</td>
+		</tr>
+		<tr>
+			<td class="wtf">Tony</td><td>84</td><td class="wtf">86</td><td>87</td><td class="wtf">82</td><td>81</td>
+		</tr>
+		<tr>
+			<td class="wtf">Scott</td><td>71</td><td class="wtf">79</td><td>82</td><td class="wtf">88</td><td>89</td>
+		</tr>
+	</table>
+	</div><br><hr><br>
+
+<!--copyright-->
+	<div style="position: fixed; bottom: 0px; width: 100%; text-align: center;">
+		<footer>Copyright &copy; 2018.<a href="C:\Codes\git_repository\moban2207\index.html" target="_blank">GOODWELL</a> All rights reserved.</footer>
+	</div>
+</body>
+</html>
