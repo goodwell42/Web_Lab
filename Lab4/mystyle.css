@@ -1,0 +1,36 @@
+.out {
+	margin: auto;
+	text-align: center;
+	width: 520px;
+	height: 1080px;
+}
+.top {
+	background-color: red;
+	height: 150px;
+}
+.middle {
+	text-align: left;
+	background-color: lightgreen;
+	height: 50px;
+}
+.left {
+	text-align: left;
+	background-color: lightblue;
+	float: left;
+	height: 350px;
+	width: 260px;
+
+}
+.right {
+	text-align: left;
+	background-color: lightpink;
+	float: right;
+	height: 350px;
+	width: 260px;
+}
+.bottom {
+	background-color: black;
+	height: 50px;
+	position: relative;
+	top: 350px;
+}

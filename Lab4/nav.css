@@ -1,0 +1,69 @@
+body {
+	margin:0px;
+}
+#nav1 {
+	position:fixed;
+	width:100%;
+	height:50px;
+	/*background-color:#e2e21d;*/
+	min-width:750px;
+}
+#nav2 {
+	width:602px;
+	/*margin:auto auto;*/
+	height:50px;
+	background-color:#00ccff;
+}
+#nav2>ul {
+	position:absolute;
+	list-style-type:none;
+	margin:0;
+	padding:0px;
+}
+#nav2>ul>li {
+	float:left;
+	width:150px;
+	border-left:1px solid #f6f6f6;
+}
+#nav2>ul>li:first-child {
+	border-left:none;
+}
+#nav2>ul>li>a {
+	display:block;
+	line-height:50px;
+	text-decoration:none;
+	color:#d8d8d8;
+	text-align:center;
+	font-family:微软雅黑, Geneva, sans-serif;
+}
+#nav2>ul>li:hover {
+	background-color:#4e4e00;
+}
+#nav2>ul>li>ul {
+	display:none;
+	list-style-type:none;
+	padding:0px;
+	float:none;
+	background-color:#00578a;
+}
+#nav2>ul>li:hover>ul {
+	display:block;
+}
+#nav2>ul>li>ul>li {
+	border-bottom:1px solid #b8b8b8;
+}
+#nav2>ul>li>ul>li>a {
+	text-decoration:none;
+	display:block;
+	line-height:50px;
+	color:#f2f2f2;
+	text-align:center;
+	font-family:微软雅黑, Geneva, sans-serif;
+}
+#nav2>ul>li>ul>li>a:hover {
+	color:#ebeb00;
+}
+
+/*实现单双行颜色不同*/
+#nav2 ul li ul li:nth-of-type(odd){ background:#00ccff;}/*奇数行*/   
+#nav2 ul li ul li:nth-of-type(even){ background:#ffcc00;}/*偶数行*/ 

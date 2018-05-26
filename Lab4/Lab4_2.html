@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Lab4_2</title>
+	<style>
+		.outline {
+			border:green solid thin;
+			outline-style:outset;
+			outline-color:#00ff00;
+			width: 520px;
+			height: 450px;
+		}
+		.outline h2 ,.balance,.box{
+			position: relative;
+			left: 10px;
+		}
+		.list {
+			position: relative;
+			left: 40px;
+		}
+		.box {
+			background-color: #33FF99;
+			width: 500px;
+			height: 365px;
+		}
+		/*有空可以改进一下表单所在的位置*/
+	</style>
+</head>
+<body>
+	<h1 align="center">Exercise N°2</h1>
+	<div class="outline">
+		<h2>Customer edition</h2>
+		<div class="box">
+		<form>
+			<div class="list">
+			<label for="Fname">First name:</label>
+			<br>
+			<input type="text" id="Fname">
+			<br><br>
+			<label for="Lname">Last name:</label>
+			<br>
+			<input type="text" id="Lname">
+			<br><br>
+			<label for="radio">Genre:</label>
+			<br>
+			<input type="radio" name="genre" id="radio" value="male" checked>Male
+			<input type="radio" name="genre" value="female">Female
+			<br><br>
+			<label for="select">Payment method:</label>
+			<br>
+			<select name="method" id="select">
+				<option value="Goa">Credit card</option>
+				<option value="volvo">Wechat</option>
+				<option value="saab">Alipay</option>
+				<option value="fiat">goodwell</option>
+				<option value="audi">wellgood</option>
+			</select>
+			<br><br>
+			</div>
+			<div class="balance">
+			<label for="code">Balance (dollars):</label>
+			<br>
+			<input type="text" id="code">
+			<br><br>
+			<input type="submit" value="Submit">
+			</div>
+		</form>
+		</div>
+	</div>
+
+<!--copyright-->
+	<div style="position: fixed; bottom: 0px; width: 100%; text-align: center;">
+		<footer>Copyright &copy; 2018.<a href="https://github.com/goodwell42/Web_Lab" target="_blank">GOODWELL</a> All rights reserved.</footer>
+	</div>
+</body>
+</html>
