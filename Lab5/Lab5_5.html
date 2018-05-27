@@ -23,18 +23,22 @@
 		<hr>
 		<form action="">
 			<label for="val1">Enter 1st value:</label>
-			<input type="text" id="val1">
+			<input type="text" id="val1" value="" name="val1">
 			<br>
 			<label for="val2">Enter 2nd value:</label>
-			<input type="text" id="val2">
+			<input type="text" id="val2" value="" name="val2">
 			<br>
 			<label for="res">Result:</label>
-			<input type="text" id="res">
+			<input type="text" id="res" value="" name="res">
 			<br>
-			<input type="button" value="+" onclick="CalcuOper(1)">
-			<input type="button" value="-" onclick="CalcuOper(2)">
-			<input type="button" value="*" onclick="CalcuOper(3)">
-			<input type="button" value="/" onclick="CalcuOper(4)">
+			<table align="center">
+			  <tr>
+			   <td><input type="button" value="add"   onclick="calc('+');"/></td>
+			   <td><input type="button" value="miner" onclick="calc('-');"/></td>
+			   <td><input type="button" value="times" onclick="calc('*');"/></td>
+			   <td><input type="button" value="divide" onclick="calc('/');"/></td>
+			  </tr>
+			</table>
 		</form>
 		<hr>
 	</div>
