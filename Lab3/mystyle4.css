@@ -1,10 +1,18 @@
-.head { 
-	background-color: #8B008B; 
-	text-align: center;
-}
 .rcenter { 
 	text-align: left; 
 }
 .lcenter { 
 	text-align: right; 
+}
+h1, p {
+	color: #70152c;
+}
+.head { 
+	background: #70152c;
+	color: white;
+	margin-left: 10px; 
+	text-align: center;
+}
+td {
+	background-color: lightgreen;
 }

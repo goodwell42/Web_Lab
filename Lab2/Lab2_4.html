@@ -4,18 +4,18 @@
 	<meta charset="UTF-8">
 	<title>Lab2_4</title>
 	<style type="text/css">
+	/*文字排版设置*/
+		.left { text-align: left; }
+		.right { text-align: right; }
 	/*A的格式设置*/
-		.a { width: 30%; height: 200px; table-layout: fixed; text-align: center;}
+		.a { width: 320px; height: 200px; table-layout: fixed; text-align: center;}
 	/*B的格式设置*/
 		.b { margin: auto; width:320px; height:200px; border:1px solid black;}
-		.b table{border-collapse: collapse;}
-		.bout {width: 320px; height: 200px; table-layout: fixed;}
-		.bleft { width: 120px; height: 150px;}
-		.bright { width: 120px; height: 150px; text-align: center;}
+		.bout { width: 320px; height: 200px; table-layout: fixed;}
+		.bleft { width: 120px; height: 150px; border-collapse: collapse;}
+		.bright { width: 120px; height: 150px;}
 	/*C的格式设置*/
-		.cout {
-			 width: 30%; height: 200px; table-layout:fixed;
-		}
+		.cout { width: 320px; height: 200px; text-align: center; margin: auto;}
 	</style>
 </head>
 <body>
@@ -40,59 +40,61 @@
 		</tr>
     </table></div> <br><hr><br>
 <!-- B -->
+<!-- 关键点在cellspacing：属性 -->
 	<div class="b">
 	<table class="bout"><tr>
 		<td><table border="1" class="bleft" align="center">
 			<td>Title goes here</td>
 		</table></td>
-		<td><table border="1" class="bright">
+		<td><table border="1" class="bright" cellspacing="10" frame=void cellpadding="10">
 			<tr>
 				<td>A</td>
-				<td>D</td>
+				<td class="right">D</td>
 			</tr>
 			<tr>
 				<td>B</td>
-				<td>E</td>
+				<td class="right">E</td>
 			</tr>
 			<tr>
 				<td>C</td>
-				<td>F</td>
+				<td class="right">F</td>
 			</tr>
 		</table></td>
 	</tr></table>
 	</div>
 	<br><hr><br>
-<!-- C6*5 -->
+<!-- C -->
 	<div class="c">
-		<table border="1" align="center" class="cout">
-			<tr>
-				<td rowspan="2" colspan="3">Title goes here</td>
-				<td rowspan="2" colspan="1">A</td>
-				<td rowspan="2" colspan="1">B</td>
-			</tr>
-			<tr>
-				<td rowspan="3" colspan="1">C</td>
-				<td colspan="1" rowspan="1">D</td>
-				<td colspan="1" rowspan="1">E</td>
-				<td colspan="1" rowspan="1">F</td>
-				<td colspan="1" rowspan="1">G</td>
-			</tr>
-			<tr>
-				<td colspan="1" rowspan="1">H</td>
-				<td colspan="2" rowspan="1">I</td>
-				<td rowspan="2" colspan="1">J</td>
-			</tr>
-			<tr>
-				<td colspan="1" rowspan="1">K</td>
-				<td colspan="1" rowspan="1">L</td>
-				<td colspan="1" rowspan="1">M</td>
-			</tr>
-			<tr>
-				<td colspan="1" rowspan="1">N</td>
-				<td colspan="4" rowspan="1">O</td>
-			</tr>
-		</table>
+	<table class="cout" border="1">
+		<tr>
+		   	<td colspan="3" class="left">Title goes <br>here</td>
+		   	<td>A</td>
+		   	<td class="right">B</td>
+	    </tr>
+		<tr>
+			<td rowspan="3" class="left">C</td>
+			<td>D</td>
+			<td>E</td>
+			<td>F</td>
+			<td class="right">G</td>
+		</tr>
+		<tr>
+			<td>H</td>
+			<td colspan="2">I</td>
+			<td rowspan="2" class="right">J</td>
+		</tr>
+		<tr>
+			<td>K</td>
+			<td>L</td>
+			<td>M</td>
+		</tr>
+		<tr>
+			<td class="right">N</td>
+			<td colspan="4">O</td>
+		</tr>
+	</table>
 	</div>
+	
 <!--copyright-->
 	<div style="position: fixed; bottom: 0px; width: 100%; text-align: center;">
 		<footer>Copyright &copy; 2018.<a href="https://github.com/goodwell42/Web_Lab" target="_blank">GOODWELL</a> All rights reserved.</footer>

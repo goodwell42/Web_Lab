@@ -9,3 +9,17 @@
 }
 td{ padding-right: 30px;}
 /* css注释：设置单元格要宽一丢丢*/
+#c table{ 
+	border:1px solid black;
+	border-collapse:collapse;
+} 
+#c table td{ border:1px solid black;} 
+/* css注释：设置table背景为红色，td背景为白色 */ 
+caption{ 
+	border-top: 1px;
+	border-left: 1px;
+	border-right: 1px;
+ 	border-bottom:0px; 
+ 	border-style: solid;
+ 	font-weight: bold;
+ }
