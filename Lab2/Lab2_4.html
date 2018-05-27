@@ -4,61 +4,94 @@
 	<meta charset="UTF-8">
 	<title>Lab2_4</title>
 	<style type="text/css">
-		.in {width: 128px; height: 200px; text-align: center; margin: -4px;}
-		.out { width: 250px; height: 200px; text-align: center; }
-
-		.b table{border-collapse:collapse; }
-		.bout {width: 250px; height: 200px;}
+	/*A的格式设置*/
+		.a { width: 30%; height: 200px; table-layout: fixed; text-align: center;}
+	/*B的格式设置*/
+		.b { margin: auto; width:320px; height:200px; border:1px solid black;}
+		.b table{border-collapse: collapse;}
+		.bout {width: 320px; height: 200px; table-layout: fixed;}
+		.bleft { width: 120px; height: 150px;}
+		.bright { width: 120px; height: 150px; text-align: center;}
+	/*C的格式设置*/
+		.cout {
+			 width: 30%; height: 200px; table-layout:fixed;
+		}
 	</style>
 </head>
 <body>
 	<h1 align="center">Exercise N°4</h1>
 <!-- A -->
-	<!-- 此表格里面双重边框，暂时未想到更好的解决办法 -->
 	<div align="center" margin: 0px;>
-	<table border="1" class="out">
+	<table border="1" class="a">
+	<!-- colspan="2"  占位,表示这一列占2列 -->
+	<!-- rowspan="3"  占位,表示这一列占3行 -->
 		<tr>
-			<td>
-				Title goes here
-			</td>
-			<td><table border="1" class="in">
-				<tr>
-					<td>A</td>
-					<td>D</td>
-				</tr>
-				<tr>
-					<td>B</td>
-					<td>E</td>
-				</tr>
-				<tr>
-					<td>C</td>
-					<td>F</td>
-				</tr>
-			</table></td>
+			<td rowspan="3" colspan="2">Title goes here</td>
+			<td>A</td>
+			<td>D</td>
 		</tr>
-	</table>
-	</div><br><hr><br>
+		<tr>
+			<td>B</td>
+			<td>E</td>
+		</tr>
+		<tr>
+			<td>C</td>
+			<td>F</td>
+		</tr>
+    </table></div> <br><hr><br>
 <!-- B -->
-	<div align="center" class="b">
-	<table border="1" class="bout"><tr>
-		<td><table border="1">
+	<div class="b">
+	<table class="bout"><tr>
+		<td><table border="1" class="bleft" align="center">
 			<td>Title goes here</td>
 		</table></td>
-		<td><table border="1">
+		<td><table border="1" class="bright">
 			<tr>
-				<td><table><td>A</td></table></td>
-				<td><table><td>D</td></table></td>
+				<td>A</td>
+				<td>D</td>
 			</tr>
 			<tr>
-				<td><table><td>B</td></table></td>
-				<td><table><td>E</td></table></td>
+				<td>B</td>
+				<td>E</td>
 			</tr>
 			<tr>
-				<td><table><td>C</td></table></td>
-				<td><table><td>F</td></table></td>
+				<td>C</td>
+				<td>F</td>
 			</tr>
 		</table></td>
-</tr></table>
+	</tr></table>
+	</div>
+	<br><hr><br>
+<!-- C6*5 -->
+	<div class="c">
+		<table border="1" align="center" class="cout">
+			<tr>
+				<td rowspan="2" colspan="3">Title goes here</td>
+				<td rowspan="2" colspan="1">A</td>
+				<td rowspan="2" colspan="1">B</td>
+			</tr>
+			<tr>
+				<td rowspan="3" colspan="1">C</td>
+				<td colspan="1" rowspan="1">D</td>
+				<td colspan="1" rowspan="1">E</td>
+				<td colspan="1" rowspan="1">F</td>
+				<td colspan="1" rowspan="1">G</td>
+			</tr>
+			<tr>
+				<td colspan="1" rowspan="1">H</td>
+				<td colspan="2" rowspan="1">I</td>
+				<td rowspan="2" colspan="1">J</td>
+			</tr>
+			<tr>
+				<td colspan="1" rowspan="1">K</td>
+				<td colspan="1" rowspan="1">L</td>
+				<td colspan="1" rowspan="1">M</td>
+			</tr>
+			<tr>
+				<td colspan="1" rowspan="1">N</td>
+				<td colspan="4" rowspan="1">O</td>
+			</tr>
+		</table>
 	</div>
 <!--copyright-->
 	<div style="position: fixed; bottom: 0px; width: 100%; text-align: center;">
