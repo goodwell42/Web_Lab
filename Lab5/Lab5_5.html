@@ -9,9 +9,16 @@
 			margin-right: auto;
 			border: 1px solid red;
 			text-align: center;
-			background-color: lightblue;
+			background-color: #00ffff;
 			width: 480px;
-			height: 250px;
+			height: 285px;
+		}
+		#sign tr td button {
+			width:50px;
+			height:30px;
+			border-radius: 8px;
+			/*outline: none;*/
+			/*border: none;*/
 		}
 	</style>
 	<script src="MyCalcu.js"></script>
@@ -22,27 +29,32 @@
 		<h1>Simple Calculator using JS</h1>
 		<hr>
 		<form action="">
-			<label for="val1">Enter 1st value:</label>
-			<input type="text" id="val1" value="" name="val1">
-			<br>
-			<label for="val2">Enter 2nd value:</label>
-			<input type="text" id="val2" value="" name="val2">
-			<br>
-			<label for="res">Result:</label>
-			<input type="text" id="res" value="" name="res">
-			<br>
 			<table align="center">
+				<tr>
+					<td><label for="val1">Enter 1st value:</label></td>
+					<td><input type="text" id="val1" value="" name="val1"></td>
+				</tr>
+				<tr>
+					<td><label for="val2">Enter 2nd value:</label></td>
+					<td><input type="text" id="val2" value="" name="val2"></td>
+				</tr>
+				<tr>
+					<td><label for="res" align="right">Result:</label></td>
+					<td><input type="text" id="res" value="" name="res"></td>
+				</tr>
+			</table>
+			<br>
+			<table align="center" id="sign">
 			  <tr>
-			   <td><input type="button" value="add"   onclick="calc('+');"/></td>
-			   <td><input type="button" value="miner" onclick="calc('-');"/></td>
-			   <td><input type="button" value="times" onclick="calc('*');"/></td>
-			   <td><input type="button" value="divide" onclick="calc('/');"/></td>
+			   <td><button type="button" value="+" onclick="calc('+');">+</button></td>
+			   <td><button type="button" value="-" onclick="calc('-');">-</button></td>
+			   <td><button type="button" value="*" onclick="calc('*');">*</button></td>
+			   <td><button type="button" value="/" onclick="calc('/');">/</button></td>
 			  </tr>
 			</table>
 		</form>
 		<hr>
 	</div>
-
 <!--copyright-->
 	<div style="position: fixed; bottom: 0px; width: 100%; text-align: center;">
 		<footer>Copyright &copy; 2018.<a href="https://github.com/goodwell42/Web_Lab" target="_blank">GOODWELL</a> All rights reserved.</footer>

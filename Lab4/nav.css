@@ -12,7 +12,7 @@ body {
 	width:602px;
 	/*margin:auto auto;*/
 	height:50px;
-	background-color:#00ccff;
+	background-color:#483D8B;
 }
 #nav2>ul {
 	position:absolute;
@@ -37,7 +37,7 @@ body {
 	font-family:微软雅黑, Geneva, sans-serif;
 }
 #nav2>ul>li:hover {
-	background-color:#4e4e00;
+	background-color:#228B22;
 }
 #nav2>ul>li>ul {
 	display:none;
@@ -65,5 +65,5 @@ body {
 }
 
 /*实现单双行颜色不同*/
-#nav2 ul li ul li:nth-of-type(odd){ background:#00ccff;}/*奇数行*/   
-#nav2 ul li ul li:nth-of-type(even){ background:#ffcc00;}/*偶数行*/ 
+#nav2 ul li ul li:nth-of-type(odd){ background:#483D8B;}/*奇数行*/   
+#nav2 ul li ul li:nth-of-type(even){ background:#228B22;}/*偶数行*/ 

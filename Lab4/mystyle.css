@@ -31,6 +31,8 @@
 .bottom {
 	background-color: black;
 	height: 50px;
-	position: relative;
-	top: 350px;
+	width: 520px;
+	float:left;
+    color:white;
+    text-align: center;
 }
